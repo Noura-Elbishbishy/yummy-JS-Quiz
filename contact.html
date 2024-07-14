@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>quiz</title>
+  <link rel="icon" href="images/logo.png">
+ </head>
+ <body>
+    <!-- nav starts here -->
+
+  <aside class="d-flex flex-column justify-content-between vh-100 text-dark">
+    <div class="sidebar-box d-flex">
+      <img src="images/logo.png" alt="yummy logo smile">
+    </div>
+    <div class="sidebar-middle">
+      <i class="fa-solid fa-bars p-2 sizing" id="navIcon"></i>
+    </div>
+    <div class="sidebar-bottom mx-auto">
+      <div class="icons">
+        <i class="fa-solid fa-globe d-block"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </aside>
+  <div class="nav-content text-white py-3">
+    <div class="a-container gap-4">
+      <a href="search.html">search</a>
+      <a href="categories.html">Categories</a>
+      <a href="area.html">Area</a>
+      <a href="ingrediants.html">Ingredients</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="copyrights px-2">
+      <p>Copyright Â© 2019 All Rights
+        Reserved.</p>
+    </div>
+  </div>
+  <br>
+    <!-- nav ends here -->
+    <!-- main part starts here  -->
+    <div class="inputsContainerContact justify-content-center align-items-center">
+        <div class="inputs d-flex flex-column justify-content-center">
+            <div class="row  m-auto w-75">
+                <div class="col-md-5 p-1">
+                    <input type="text" id="Name" class="form-control" placeholder="Enter Your Name"/>
+                    <div id="nameError" class="text-danger"></div>
+                </div>
+                <div class="col-md-5 p-1">
+                    <input type="email" id="Email" class="form-control" placeholder="Enter Your Email"/>
+                    <div id="emailError" class="text-danger"></div>
+                </div>
+            </div>
+            <div class="row  m-auto w-75">
+                <div class="col-md-5 p-1">
+                    <input type="number" id="phone" class="form-control" placeholder="Enter Your Phone"/>
+                    <div id="phoneError" class="text-danger"></div>
+                </div>
+                <div class="col-md-5 p-1">
+                    <input type="number" id="age" class="form-control" placeholder="Enter Your Age" maxlength="2"/>  
+                    <div id="ageError" class="text-danger"></div>
+                </div>
+            </div>
+            <div class="row  m-auto w-75">
+                <div class="col-md-5 p-1">
+                    <input type="password" id="pass" class="form-control" placeholder="Enter Your Pass" minlength="8"/>
+                    <div id="passwordError" class="text-danger"></div>
+                </div>
+                <div class="col-md-5 p-1">
+                    <input type="password" id="repass" class="form-control" placeholder="RePass" maxlength="8"/>
+                    <div id="repassError" class="text-danger"></div>
+                </div>
+            </div>    
+          
+                <div class="col text-center">
+                    <button id="signInBtn" class="btn btn-outline-danger my-3" disabled>Submit</button>
+                </div>
+            
+        </div>
+    </div>
+    <!-- main part ends here  -->
+ 
+    <script src="js/jquery-3.7.1.min.js"></script> 
+    <script src="js/nav.js"></script>
+    <script src="js/contact.js"></script>
+ </body>
+</html>
